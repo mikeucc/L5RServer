@@ -1,0 +1,310 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{831FC0C0-5A95-4C28-950C-F8A280184B1E}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>L5R</RootNamespace>
+    <AssemblyName>L5R</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cards\ALITS-004.cs" />
+    <Compile Include="Cards\ALITS-027.cs" />
+    <Compile Include="Cards\AM-010.cs" />
+    <Compile Include="Cards\AM-012.cs" />
+    <Compile Include="Cards\AM-022.cs" />
+    <Compile Include="Cards\AM-027.cs" />
+    <Compile Include="Cards\IVE-008.cs" />
+    <Compile Include="Cards\IVE-071.cs" />
+    <Compile Include="Cards\IVE-072.cs" />
+    <Compile Include="Cards\IVE-073.cs" />
+    <Compile Include="Cards\IVE-074.cs" />
+    <Compile Include="Cards\IVE-084.cs" />
+    <Compile Include="Cards\IVE-085.cs" />
+    <Compile Include="Cards\IVE-089.cs" />
+    <Compile Include="Cards\IVE-090.cs" />
+    <Compile Include="Cards\IVE-091.cs" />
+    <Compile Include="Cards\IVE-092.cs" />
+    <Compile Include="Cards\IVE-280.cs" />
+    <Compile Include="Cards\IVE-290.cs" />
+    <Compile Include="Cards\IVE-319.cs" />
+    <Compile Include="Cards\IVE-365.cs" />
+    <Compile Include="Cards\IVE-366.cs" />
+    <Compile Include="Cards\PlayerBattlePass.cs" />
+    <Compile Include="Cards\PlayerDynastyPass.cs" />
+    <Compile Include="Cards\PlayerDynastyRecruit.cs" />
+    <Compile Include="Cards\PlayerDynastyRefill.cs" />
+    <Compile Include="Cards\PlayerInterruptPass.cs" />
+    <Compile Include="Cards\PlayerLimitedCycle.cs" />
+    <Compile Include="Cards\PlayerLimitedImperialFavour.cs" />
+    <Compile Include="Cards\PlayerLimitedLobby.cs" />
+    <Compile Include="Cards\PlayerLimitedRepeatableKharmic.cs" />
+    <Compile Include="Cards\PlayerOpenEquip.cs" />
+    <Compile Include="Cards\PlayerOpenPass.cs" />
+    <Compile Include="Cards\PlayerRecruitInterruptPass.cs" />
+    <Compile Include="Cards\Promo-159.cs" />
+    <Compile Include="Cards\TCS-008.cs" />
+    <Compile Include="Cards\TCS-031.cs" />
+    <Compile Include="Gamestate\ActionPhase.cs" />
+    <Compile Include="Gamestate\Actions\Battle\ActionAbsentBattle.cs" />
+    <Compile Include="Gamestate\Actions\Battle\ActionBattle.cs" />
+    <Compile Include="Gamestate\Actions\Battle\ActionBattleChooseEffect.cs" />
+    <Compile Include="Gamestate\Actions\Battle\ActionBattleRepeatable.cs" />
+    <Compile Include="Gamestate\Actions\Battle\ActionBattleTireless.cs" />
+    <Compile Include="Gamestate\Actions\Battle\ActionBattleTirelessRepeatable.cs" />
+    <Compile Include="Gamestate\Actions\Battle\ActionHomeBattle.cs" />
+    <Compile Include="Gamestate\Actions\Dynasty\ActionDynasty.cs" />
+    <Compile Include="Gamestate\Actions\Dynasty\ActionDynastyRepeatable.cs" />
+    <Compile Include="Gamestate\Actions\Engage\ActionEngage.cs" />
+    <Compile Include="Gamestate\Actions\Engage\ActionEngageAbsent.cs" />
+    <Compile Include="Gamestate\Actions\IAction.cs" />
+    <Compile Include="Gamestate\Actions\Interrupt\ActionInterrupt.cs" />
+    <Compile Include="Gamestate\Actions\Interrupt\ActionRecruitInterrupt.cs" />
+    <Compile Include="Gamestate\Actions\Limited\ActionLimited.cs" />
+    <Compile Include="Gamestate\Actions\Limited\ActionLimitedPolitical.cs" />
+    <Compile Include="Gamestate\Actions\Limited\ActionLimitedReapatable.cs" />
+    <Compile Include="Gamestate\Actions\Open\ActionOpen.cs" />
+    <Compile Include="Gamestate\Actions\Open\ActionOpenRepeatable.cs" />
+    <Compile Include="Gamestate\Actions\Open\ActionOpenRepeatableTireless.cs" />
+    <Compile Include="Gamestate\Actions\Open\ActionOpenTireless.cs" />
+    <Compile Include="Gamestate\Alignments.cs" />
+    <Compile Include="Gamestate\AttackPhase.cs" />
+    <Compile Include="Gamestate\Battlefield.cs" />
+    <Compile Include="Gamestate\CardTypes\Card.cs" />
+    <Compile Include="Gamestate\CardTypes\Dynasty\DynastyCard.cs" />
+    <Compile Include="Gamestate\CardTypes\Dynasty\Event\EventCard.cs" />
+    <Compile Include="Gamestate\CardTypes\Dynasty\Holding\Holding.cs" />
+    <Compile Include="Gamestate\CardTypes\Dynasty\Personality\Personality.cs" />
+    <Compile Include="Gamestate\CardTypes\Fate Card\Attachments\Armor.cs" />
+    <Compile Include="Gamestate\CardTypes\Fate Card\Attachments\Attachment.cs" />
+    <Compile Include="Gamestate\CardTypes\Fate Card\Attachments\Follower.cs" />
+    <Compile Include="Gamestate\CardTypes\Fate Card\Attachments\Item.cs" />
+    <Compile Include="Gamestate\CardTypes\Fate Card\Attachments\Spell.cs" />
+    <Compile Include="Gamestate\CardTypes\Fate Card\Attachments\Weapon.cs" />
+    <Compile Include="Gamestate\CardTypes\Fate Card\FateCard.cs" />
+    <Compile Include="Gamestate\CardTypes\Fate Card\Ring\Ring.cs" />
+    <Compile Include="Gamestate\CardTypes\Fate Card\Strategy\Kiho.cs" />
+    <Compile Include="Gamestate\CardTypes\Fate Card\Strategy\Strategy.cs" />
+    <Compile Include="Gamestate\CardTypes\PlayerCard.cs" />
+    <Compile Include="Gamestate\CardTypes\Stronghold.cs" />
+    <Compile Include="Gamestate\Condition\ConditionAssignedToCurrentBattlefield.cs" />
+    <Compile Include="Gamestate\Condition\ConditionAtLeastOnePH.cs" />
+    <Compile Include="Gamestate\Condition\ConditionCardStatusNoAttachments.cs" />
+    <Compile Include="Gamestate\Condition\ConditionGoldCostLessThanFollowersForce.cs" />
+    <Compile Include="Gamestate\Condition\ConditionLessProvinceThanOpponent.cs" />
+    <Compile Include="Gamestate\Condition\ConditionLowerForceAndChi.cs" />
+    <Compile Include="Gamestate\Condition\ConditionLowerForceThanDiscardedFocus.cs" />
+    <Compile Include="Gamestate\Condition\ConditionLowerForceThanThisCard.cs" />
+    <Compile Include="Gamestate\Condition\ConditionLowerPH.cs" />
+    <Compile Include="Gamestate\Condition\ConditionLowerThanXForce.cs" />
+    <Compile Include="Gamestate\Condition\ConditionNull.cs" />
+    <Compile Include="Gamestate\Condition\ConditionPersonalityEqualLowerChi.cs" />
+    <Compile Include="Gamestate\Condition\ConditionPersonalityHasAttachedWeapon.cs" />
+    <Compile Include="Gamestate\Condition\ConditionPersonalityHasFollowerAttached.cs" />
+    <Compile Include="Gamestate\Condition\ConditionPersonalityStatusBowed.cs" />
+    <Compile Include="Gamestate\Condition\ConditionPersonalityStatusDishonoured.cs" />
+    <Compile Include="Gamestate\Condition\ConditionPersonalityStatusUnbowed.cs" />
+    <Compile Include="Gamestate\Condition\ConditionStatusCardFaceUp.cs" />
+    <Compile Include="Gamestate\Condition\ConditionStatusDead.cs" />
+    <Compile Include="Gamestate\Condition\ConditionStatusUnbowed.cs" />
+    <Compile Include="Gamestate\Condition\ConditionTypeAttachment.cs" />
+    <Compile Include="Gamestate\Condition\ConditionTypeCourtier.cs" />
+    <Compile Include="Gamestate\Condition\ConditionTypeFallen.cs" />
+    <Compile Include="Gamestate\Condition\ConditionTypeFollower.cs" />
+    <Compile Include="Gamestate\Condition\ConditionTypeHuman.cs" />
+    <Compile Include="Gamestate\Condition\ConditionTypeInfantry.cs" />
+    <Compile Include="Gamestate\Condition\ConditionTypeKharmic.cs" />
+    <Compile Include="Gamestate\Condition\ConditionTypeNonhuman.cs" />
+    <Compile Include="Gamestate\Condition\ConditionTypeNonUnique.cs" />
+    <Compile Include="Gamestate\Condition\ConditionTypePersonality.cs" />
+    <Compile Include="Gamestate\Condition\ConditionTypeReserve.cs" />
+    <Compile Include="Gamestate\Condition\ConditionTypeRing.cs" />
+    <Compile Include="Gamestate\Condition\ConditionTypeSamurai.cs" />
+    <Compile Include="Gamestate\Condition\ConditionTypeSpirit.cs" />
+    <Compile Include="Gamestate\Condition\ConditionTypeTactician.cs" />
+    <Compile Include="Gamestate\Condition\ConditionTypeTerrain.cs" />
+    <Compile Include="Gamestate\Condition\ConditionTypeUnique.cs" />
+    <Compile Include="Gamestate\Condition\ICondition.cs" />
+    <Compile Include="Gamestate\Costs\CostBowThisCard.cs" />
+    <Compile Include="Gamestate\Costs\CostPayFixedGold.cs" />
+    <Compile Include="Gamestate\Costs\ICost.cs" />
+    <Compile Include="Gamestate\DynastyPhase.cs" />
+    <Compile Include="Gamestate\Effects\EBowCardWithLessForceThanDiscardFocus.cs" />
+    <Compile Include="Gamestate\Effects\EBowTargetCard.cs" />
+    <Compile Include="Gamestate\Effects\EBowThisCard.cs" />
+    <Compile Include="Gamestate\Effects\EBowToBow.cs" />
+    <Compile Include="Gamestate\Effects\ECycle.cs" />
+    <Compile Include="Gamestate\Effects\EDestroyActionsCard.cs" />
+    <Compile Include="Gamestate\Effects\EDestroyFollowersUpToForceX.cs" />
+    <Compile Include="Gamestate\Effects\EDiscardACard.cs" />
+    <Compile Include="Gamestate\Effects\EDiscardACardForFocusValue.cs" />
+    <Compile Include="Gamestate\Effects\EDiscardImperialFavour.cs" />
+    <Compile Include="Gamestate\Effects\EDiscardSpellOrKiho.cs" />
+    <Compile Include="Gamestate\Effects\EDrawACard.cs" />
+    <Compile Include="Gamestate\Effects\EDynastyMuligan.cs" />
+    <Compile Include="Gamestate\Effects\EEnemyChoiseBowPerFol.cs" />
+    <Compile Include="Gamestate\Effects\EFear.cs" />
+    <Compile Include="Gamestate\Effects\EFearWithConditionalModifier.cs" />
+    <Compile Include="Gamestate\Effects\EForceModifier.cs" />
+    <Compile Include="Gamestate\Effects\EGainImperialFavour.cs" />
+    <Compile Include="Gamestate\Effects\EGivePermForceBonus.cs" />
+    <Compile Include="Gamestate\Effects\EGiveTempConqueror.cs" />
+    <Compile Include="Gamestate\Effects\EKharmic.cs" />
+    <Compile Include="Gamestate\Effects\EModifyMelee.cs" />
+    <Compile Include="Gamestate\Effects\EMoveToCurrentBattledield.cs" />
+    <Compile Include="Gamestate\Effects\ENegateMovement.cs" />
+    <Compile Include="Gamestate\Effects\ENull.cs" />
+    <Compile Include="Gamestate\Effects\EPass.cs" />
+    <Compile Include="Gamestate\Effects\EPayGold.cs" />
+    <Compile Include="Gamestate\Effects\ERaiseProvinceStrengthByDiscardValue.cs" />
+    <Compile Include="Gamestate\Effects\ERaiseProvinceStrengthByValue.cs" />
+    <Compile Include="Gamestate\Effects\ERangedAttack.cs" />
+    <Compile Include="Gamestate\Effects\ERecruitAttachment.cs" />
+    <Compile Include="Gamestate\Effects\ERecruitCardFromProvince.cs" />
+    <Compile Include="Gamestate\Effects\ERecruitCostModificationFollower.cs" />
+    <Compile Include="Gamestate\Effects\ERefillProvince.cs" />
+    <Compile Include="Gamestate\Effects\ESendUnitHome.cs" />
+    <Compile Include="Gamestate\Effects\EStraightenFollower.cs" />
+    <Compile Include="Gamestate\Effects\EStraightenUnit.cs" />
+    <Compile Include="Gamestate\Effects\ETactician.cs" />
+    <Compile Include="Gamestate\Effects\EValueOfTargetedCardsForce.cs" />
+    <Compile Include="Gamestate\Effects\IEffect.cs" />
+    <Compile Include="Gamestate\Gamestate.cs" />
+    <Compile Include="Gamestate\Location\Home.cs" />
+    <Compile Include="Gamestate\Location\Province.cs" />
+    <Compile Include="Gamestate\Player.cs" />
+    <Compile Include="Gamestate\PlayerDynastyDeck.cs" />
+    <Compile Include="Gamestate\PlayerDynastyDiscard.cs" />
+    <Compile Include="Gamestate\PlayerFateDeck.cs" />
+    <Compile Include="Gamestate\PlayerHand.cs" />
+    <Compile Include="Gamestate\PlayerFateDiscard.cs" />
+    <Compile Include="Gamestate\PlayerHome.cs" />
+    <Compile Include="Gamestate\TargetConditionStruct.cs" />
+    <Compile Include="Gamestate\Targeting\ITarget.cs" />
+    <Compile Include="Gamestate\Targeting\Target.cs" />
+    <Compile Include="Gamestate\Targeting\TargetAAttackingPersonality.cs" />
+    <Compile Include="Gamestate\Targeting\TargetACard.cs" />
+    <Compile Include="Gamestate\Targeting\TargetACardAnywhere.cs" />
+    <Compile Include="Gamestate\Targeting\TargetACardInHand.cs" />
+    <Compile Include="Gamestate\Targeting\TargetACardInYourProvince.cs" />
+    <Compile Include="Gamestate\Targeting\TargetACardWithoutAttachments.cs" />
+    <Compile Include="Gamestate\Targeting\TargetADefendingPersonality.cs" />
+    <Compile Include="Gamestate\Targeting\TargetADishonourablePersonality.cs" />
+    <Compile Include="Gamestate\Targeting\TargetAEnemyCard.cs" />
+    <Compile Include="Gamestate\Targeting\TargetAHolding.cs" />
+    <Compile Include="Gamestate\Targeting\TargetAKihoOrSpellInHand.cs" />
+    <Compile Include="Gamestate\Targeting\TargetAOpposedPersonality.cs" />
+    <Compile Include="Gamestate\Targeting\TargetAPersonality.cs" />
+    <Compile Include="Gamestate\Targeting\TargetAPersonalityFollower.cs" />
+    <Compile Include="Gamestate\Targeting\TargetARangedMeleeFear.cs" />
+    <Compile Include="Gamestate\Targeting\TargetEnemyAttachment.cs" />
+    <Compile Include="Gamestate\Targeting\TargetEnemyCard.cs" />
+    <Compile Include="Gamestate\Targeting\TargetEnemyFollowerOrPersonalityWithoutFollower.cs" />
+    <Compile Include="Gamestate\Targeting\TargetEnemyHolding.cs" />
+    <Compile Include="Gamestate\Targeting\TargetEnemyPersonality.cs" />
+    <Compile Include="Gamestate\Targeting\TargetEnemyPersonalityFollower.cs" />
+    <Compile Include="Gamestate\Targeting\TargetFollowerOnYourPersonality.cs" />
+    <Compile Include="Gamestate\Targeting\TargetYourApposedPersonality.cs" />
+    <Compile Include="Gamestate\Targeting\TargetYourAttachmentInFateDeck.cs" />
+    <Compile Include="Gamestate\Targeting\TargetYourCardInHandOrProvince.cs" />
+    <Compile Include="Gamestate\Targeting\TargetYourCardInProvince.cs" />
+    <Compile Include="Gamestate\Targeting\TargetYourCardTypeInHand.cs" />
+    <Compile Include="Gamestate\Targeting\TargetYourDeadPersonality.cs" />
+    <Compile Include="Gamestate\Targeting\TargetYourDefendingPersonalities.cs" />
+    <Compile Include="Gamestate\Targeting\TargetYourDiscardedFollower.cs" />
+    <Compile Include="Gamestate\Targeting\TargetYourDiscardedItem.cs" />
+    <Compile Include="Gamestate\Targeting\TargetYourDiscardedWeapon.cs" />
+    <Compile Include="Gamestate\Targeting\TargetYourHolding.cs" />
+    <Compile Include="Gamestate\Targeting\TargetYourHonourablePersonality.cs" />
+    <Compile Include="Gamestate\Targeting\TargetYourInHandFollower.cs" />
+    <Compile Include="Gamestate\Targeting\TargetYourInHandItem.cs" />
+    <Compile Include="Gamestate\Targeting\TargetYourInHandRing.cs" />
+    <Compile Include="Gamestate\Targeting\TargetYourInHandSpell.cs" />
+    <Compile Include="Gamestate\Targeting\TargetYourInHandStrategy.cs" />
+    <Compile Include="Gamestate\Targeting\TargetYourPersonality.cs" />
+    <Compile Include="Gamestate\Targeting\TargetYourPersonalityAtHome.cs" />
+    <Compile Include="Gamestate\Targeting\TargetYourPersonalityFollower.cs" />
+    <Compile Include="Gamestate\Targeting\TargetYourRing.cs" />
+    <Compile Include="Gamestate\Targeting\TargetYourTraitPersonality.cs" />
+    <Compile Include="Gamestate\Targeting\TargetYourUnbowedPersonality.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

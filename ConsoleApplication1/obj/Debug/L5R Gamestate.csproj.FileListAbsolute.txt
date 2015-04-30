@@ -1,0 +1,18 @@
+D:\Software\L5RServer\ConsoleApplication1\obj\Debug\L5R Gamestate.csprojResolveAssemblyReference.cache
+D:\Software\L5RServer\ConsoleApplication1\bin\Debug\L5R.exe.config
+D:\Software\L5RServer\ConsoleApplication1\bin\Debug\L5R.exe
+D:\Software\L5RServer\ConsoleApplication1\bin\Debug\L5R.pdb
+D:\Software\L5RServer\ConsoleApplication1\obj\Debug\L5R.exe
+D:\Software\L5RServer\ConsoleApplication1\obj\Debug\L5R.pdb
+C:\Software\L5RServer\ConsoleApplication1\bin\Debug\L5R.exe.config
+C:\Software\L5RServer\ConsoleApplication1\obj\Debug\L5R.exe
+C:\Software\L5RServer\ConsoleApplication1\obj\Debug\L5R.pdb
+C:\Software\L5RServer\ConsoleApplication1\bin\Debug\L5R.exe
+C:\Software\L5RServer\ConsoleApplication1\bin\Debug\L5R.pdb
+C:\Software\L5RServer\ConsoleApplication1\obj\Debug\L5R Gamestate.csprojResolveAssemblyReference.cache
+C:\Code\L5RServer\ConsoleApplication1\bin\Debug\L5R.exe.config
+C:\Code\L5RServer\ConsoleApplication1\obj\Debug\L5R.exe
+C:\Code\L5RServer\ConsoleApplication1\obj\Debug\L5R.pdb
+C:\Code\L5RServer\ConsoleApplication1\bin\Debug\L5R.exe
+C:\Code\L5RServer\ConsoleApplication1\bin\Debug\L5R.pdb
+C:\Code\L5RServer\ConsoleApplication1\obj\Debug\L5R Gamestate.csprojResolveAssemblyReference.cache
