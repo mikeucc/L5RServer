@@ -24,6 +24,7 @@ namespace L5R.Gamestate
                 {
                     crd.destroyCard();
                 }
+                gs.performingPlayer = gs.getOpposingPlayer(gs.performingPlayer);
                 return true;
             }
             else
@@ -43,7 +44,7 @@ namespace L5R.Gamestate
                 
                 
             }
-
+            gs.performingPlayer = gs.getOpposingPlayer(gs.performingPlayer);
             return false;
         }
     }

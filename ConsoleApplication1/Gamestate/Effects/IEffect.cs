@@ -30,6 +30,7 @@ namespace L5R.Gamestate
 
         public virtual bool applyEffects(Gamestate gs)
         {
+            gs.performingPlayer = gs.getOpposingPlayer(gs.performingPlayer);
             return true;
         }
 

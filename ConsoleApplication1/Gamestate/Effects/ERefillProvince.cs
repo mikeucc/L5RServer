@@ -26,7 +26,7 @@ namespace L5R.Gamestate
             {
                 Console.WriteLine("Invalid gamestate: ERefillProvince");
             }
-
+            gs.performingPlayer = gs.getOpposingPlayer(gs.performingPlayer);
             return true;
         }
     }

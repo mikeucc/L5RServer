@@ -13,6 +13,7 @@ namespace L5R.Gamestate
             {
                 crd.tempTraits.Add(Gamestate.Conqueror);
             }
+            gs.performingPlayer = gs.getOpposingPlayer(gs.performingPlayer);
             return true;
         }
     }

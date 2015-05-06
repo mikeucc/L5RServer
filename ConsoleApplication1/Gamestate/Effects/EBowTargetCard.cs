@@ -21,7 +21,7 @@ namespace L5R.Gamestate
                 crd.IsBowed = true;
                 
             }
-
+            gs.performingPlayer = gs.getOpposingPlayer(gs.performingPlayer);
             return returnValue;
         }
     }

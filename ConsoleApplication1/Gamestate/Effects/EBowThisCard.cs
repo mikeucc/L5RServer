@@ -16,6 +16,7 @@ namespace L5R.Gamestate
             }
             
             this.effectOwner.actionOwner.IsBowed = true;
+            gs.performingPlayer = gs.getOpposingPlayer(gs.performingPlayer);
             return returnValue;
         }
     }

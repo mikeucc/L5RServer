@@ -21,6 +21,7 @@ namespace L5R.Gamestate
                     }
                 }
             }
+            gs.performingPlayer = gs.getOpposingPlayer(gs.performingPlayer);
             return true;
         }
     }

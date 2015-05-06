@@ -10,6 +10,7 @@ namespace L5R.Gamestate
         public override bool applyEffects(Gamestate gs)
         {
             this.playerEffected.payGoldCost(this.effectValue);
+            gs.performingPlayer = gs.getOpposingPlayer(gs.performingPlayer);
             return true;
         }
     }

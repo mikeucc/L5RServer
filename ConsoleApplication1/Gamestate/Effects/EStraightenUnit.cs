@@ -15,6 +15,7 @@ namespace L5R.Gamestate
                 Personality per = (Personality)crd;
                 per.straightenUnit();
             }
+            gs.performingPlayer = gs.getOpposingPlayer(gs.performingPlayer);
             return true;
         }
     }

@@ -10,6 +10,7 @@ namespace L5R.Gamestate
         public override bool applyEffects(Gamestate gs)
         {
             gs.currentBattlefield.battlefieldProvince.currentProvinceStrength += this.effectOwner.focusValueDiscard;
+            gs.performingPlayer = gs.getOpposingPlayer(gs.performingPlayer);
             return true;
         }
     }

@@ -30,7 +30,7 @@ namespace L5R.Gamestate
             {
                 Console.WriteLine("No legal targets");
             }
-
+            gs.performingPlayer = gs.getOpposingPlayer(gs.performingPlayer);
             return true;
         }
     }

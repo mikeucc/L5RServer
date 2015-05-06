@@ -10,6 +10,7 @@ namespace L5R.Gamestate
         public override bool applyEffects(Gamestate gs)
         {
             gs.currentActionBeingPlayed.modifyMelee += this.effectValue;
+            gs.performingPlayer = gs.getOpposingPlayer(gs.performingPlayer);
             return true;
         }
 

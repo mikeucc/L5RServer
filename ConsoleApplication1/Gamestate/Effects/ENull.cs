@@ -13,7 +13,7 @@ namespace L5R.Gamestate
             if(this.effectOwner.targetsSelected)
             {
                 this.effectOwner.targetsSelected = false;
-                
+                gs.performingPlayer = gs.getOpposingPlayer(gs.performingPlayer);
                 return true;
             }
             else
@@ -22,7 +22,7 @@ namespace L5R.Gamestate
                 this.effectOwner.targetsSelected = true;
                 this.applyEffects(gs);
             }
-
+            gs.performingPlayer = gs.getOpposingPlayer(gs.performingPlayer);
             return false;
         }
     }

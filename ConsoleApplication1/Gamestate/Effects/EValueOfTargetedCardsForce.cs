@@ -29,7 +29,7 @@ namespace L5R.Gamestate
                 this.effectOwner.targetsSelected = true;
                 this.applyEffects(gs);
             }
-
+            gs.performingPlayer = gs.getOpposingPlayer(gs.performingPlayer);
             return false;
         }
     }

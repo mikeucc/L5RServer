@@ -11,7 +11,7 @@ namespace L5R.Gamestate
         {
             
             gs.performingPlayer.pHand.addCardToHand(gs.performingPlayer.pFateDeck.drawTopCard());
-                     
+            gs.performingPlayer = gs.getOpposingPlayer(gs.performingPlayer);         
             return true;
         }
     }

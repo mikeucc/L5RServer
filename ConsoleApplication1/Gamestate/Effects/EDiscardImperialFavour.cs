@@ -12,10 +12,12 @@ namespace L5R.Gamestate
             if (this.cardOwner.playerOwner.hasImperialFavour)
             {
                 this.cardOwner.playerOwner.hasImperialFavour = false;
+                gs.performingPlayer = gs.getOpposingPlayer(gs.performingPlayer);
                 return true;
             }
             else
             {
+                gs.performingPlayer = gs.getOpposingPlayer(gs.performingPlayer);
                 return false;
             }
         }

@@ -15,7 +15,7 @@ namespace L5R.Gamestate
             {
                 crd.tempforceModifier += this.effectValue;
             }
-
+            gs.performingPlayer = gs.getOpposingPlayer(gs.performingPlayer);
             return true;
         }
     }

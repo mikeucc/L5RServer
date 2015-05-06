@@ -21,10 +21,12 @@ namespace L5R.Gamestate
                 {
                     if (per.isHonourable && per.personalHonor > 0 && gs.performingPlayer.familyHonour > gs.performingPlayer.opposingPlayer.familyHonour)
                     {
+                        gs.performingPlayer = gs.getOpposingPlayer(gs.performingPlayer);
                         return true;
                     }
                     else
                     {
+                        gs.performingPlayer = gs.getOpposingPlayer(gs.performingPlayer);
                         return false;
                     }
                 }
@@ -33,7 +35,7 @@ namespace L5R.Gamestate
             {
                 //Personalities not in play
             }
-
+            gs.performingPlayer = gs.getOpposingPlayer(gs.performingPlayer);
             return false;
             
         }

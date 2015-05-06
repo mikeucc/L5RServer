@@ -20,7 +20,7 @@ namespace L5R.Gamestate
                 
                 att.IsBowed = false;
             }
-
+            gs.performingPlayer = gs.getOpposingPlayer(gs.performingPlayer);
             return returnValue;
         }
     }

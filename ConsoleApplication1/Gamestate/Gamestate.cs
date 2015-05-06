@@ -248,7 +248,7 @@ namespace L5R.Gamestate
                 {
                     Console.WriteLine("Gamestate:Pick Action:Interrupt selected");
                     selectedAction.resolveEffects();
-                    this.performingPlayer = performingPlayer.opposingPlayer;
+                    
                 }
                 else
                 {

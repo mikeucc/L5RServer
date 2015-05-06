@@ -17,6 +17,7 @@ namespace L5R.Gamestate
             {
                 selectedCard.IsBowed = true;
             }
+            gs.performingPlayer = gs.getOpposingPlayer(gs.performingPlayer);
             return true;
         }
     }

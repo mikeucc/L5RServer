@@ -15,6 +15,7 @@ namespace L5R.Gamestate
                 this.effectOwner.actionOwner.playerOwner.InterruptHasPassed = true;
                 Console.WriteLine(gs.performingPlayer.aLabel+" Interrupt pass");
                 
+                
 
             }
             else
@@ -23,8 +24,9 @@ namespace L5R.Gamestate
                 this.effectOwner.actionOwner.playerOwner.hasPassed = true;
                 Console.WriteLine(gs.performingPlayer.aLabel+" Action Pass");
                 
+                
             }
-
+            gs.performingPlayer = gs.getOpposingPlayer(gs.performingPlayer);
             return true;
         }
     }

@@ -34,7 +34,7 @@ namespace L5R.Gamestate
                     Console.WriteLine("Is Face down:" + pv.purchasableCard.IsFaceDown.ToString());
                
             }
-
+            gs.performingPlayer = gs.getOpposingPlayer(gs.performingPlayer);
             return true;
         }
     }

@@ -13,10 +13,12 @@ namespace L5R.Gamestate
             if (effectOwner.willDestroy == true)
             {
                 effectOwner.actionOwner.destroyCard();
+                gs.performingPlayer = gs.getOpposingPlayer(gs.performingPlayer);
                 return true;
             }
             else
             {
+                gs.performingPlayer = gs.getOpposingPlayer(gs.performingPlayer);
                 return false;
             }
         }

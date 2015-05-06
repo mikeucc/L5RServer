@@ -89,7 +89,6 @@ namespace L5R.Gamestate
                 gs.currentActionBeingPlayed.resolveEffects();
                 gs.player1.InterruptHasPassed = false;
                 gs.player2.InterruptHasPassed = false;
-                gs.performingPlayer = gs.currentActionBeingPlayed.actionOwner.playerOwner.opposingPlayer;
                 gs.currentActionBeingPlayed.actionPerformed = true;
                 gs.currentActionBeingPlayed = null;
                 return;
